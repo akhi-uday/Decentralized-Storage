@@ -1,0 +1,30 @@
+{%extends "base.html" %}
+
+{%block content%}
+<br>
+<div  class="container" align="center">
+
+  <div id="mydiv" class="jumbotron" style="text-align: center;border-color: black;
+  border-style: solid;max-width: 25rem;
+  border-width: 2px;padding:20px;">
+    <form class="form-group" style="text-align: center" method="POST" >
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+        <h3>REGISTER</h3>  <br>
+  <h3 style="text-align:center"> D-STORAGE</h3>
+
+
+  <form class="form-group"  method="POST">
+    {{form.hidden_tag()}}<br>
+    {{form.username.label}}<br>
+    {{form.username(class="form-control")}}
+    {{form.email.label}}<br>
+    {{form.email(class="form-control")}}
+    {{form.password.label}}<br>
+    {{form.password(class="form-control")}}<br>
+    {{form.submit(class="btn btn-secondary btn-lg btn-block")}}
+</form>
+</div>
+</div>
+
+{%endblock%}

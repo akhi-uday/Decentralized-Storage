@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block content %}
+<div class="jumbotron">
+  <h3 style="text-align:center;border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px" >List of files you have uploaded:</h3>
+<div class="container">
+<ul>
+  {%for res in result%}
+<div class="card" style="font-size:20px">
+  <div class="card-body">
+      <li>{{res.name}}</li>
+  </div>
+</div>
+  {%endfor%}
+</ul>
+</div>
+</div>
+{%endblock%}

@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+
+{%block content%}
+<div>
+
+  <form class="form-group"  method="POST">
+{{form.hidden_tag()}}
+{{form.code.label}}
+{{form.code()}}
+<br><br>
+{{form.compile(class="btn btn-secondary btn-lg")}}
+
+</form>
+</div>
+
+
+{%endblock%}

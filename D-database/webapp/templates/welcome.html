@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+    <meta charset="utf-8">
+    <title>D-CLOUD </title>
+
+  </head>
+  <body>
+    <h2 style="text-align:center;color:white;border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px">DECENTRALISED IMAGE STORAGE</h2>
+    <br><br>
+    <div class="container"style="font-size:30px;text-align:center">
+            <br>
+            <label>Signup to our website!  </label><br>
+                <a class="btn btn-primary" href="{{url_for('signup')}}" role="button" >CLICK</a>
+    </div>
+    <div class="container" style="color:white">
+      <p>Decentralised storage is a potential solution that Blockchain companies are researching and implementing. It is a system of being able to store your files without having to reply on large, centralized silos of data that don’t undermine important values such as privacy and freedom of your information.</p>
+
+    </div>
+    <div class="image-container">
+      <img src="{{url_for('static',filename='download.jpg')}}" class="image-thumbnail" width="400px" height="300px">
+
+    </div>
+  </body>
+</html>
