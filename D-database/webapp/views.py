@@ -70,7 +70,7 @@ def upload():
 					i+=1
 				return redirect(url_for('users.shower'))
 		else:
-			return "fucked...!"
+			return "ERROR!"
 			# else:
 			# 	peer_audio = audio_split(upload.image.data)
 			# 	for ip in hostnames:
@@ -125,7 +125,7 @@ def image(name):
 			img.show()
 
 		else:
-			print("local fucks...!")
+			print("local!")
 			image = Image_Base.query.filter_by(image_name=name).first()
 			img = arr2img(image.image,image.width,image.height,image.color,image.image_name)
 			images.append(img)
