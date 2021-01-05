@@ -8,4 +8,4 @@ data=reliable_recv(conn)
      
 
      image.show()
-	 return "<h1>juice kudithiya</h1>"
+	 return "<h1>HELLO</h1>"
